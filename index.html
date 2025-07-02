@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head><body>
+
+    <div class="container">
+        
+        <div id="home-view" class="view active">
+            <header>
+                <h1>My Blog</h1>
+                <button id="new-post-btn" class="btn btn-primary">Create New Post</button>
+            </header>
+            <main id="posts-list">
+             
+            </main>
+        </div>
+
+       
+        <div id="post-view" class="view">
+            <header>
+                <button id="back-to-home-btn" class="btn">← Back to Posts</button>
+                <div>
+                    <button id="edit-post-btn" class="btn btn-secondary">Edit</button>
+                    <button id="delete-post-btn" class="btn btn-danger">Delete</button>
+                </div>
+            </header>
+            <article>
+                
+                <div id="post-view-video-container"></div>
+                
+                
+                <img id="post-view-image" src="" alt="Post Image">
+
+                <h1 id="post-view-title"></h1>
+                <p id="post-view-content"></p>
+            </article>
+        </div>
+
+     
+        <div id="editor-view" class="view">
+            <header>
+                <h2 id="editor-title">Create a New Post</h2>
+            </header>
+            <form id="post-form">
+                <input type="hidden" id="post-id-input">
+                
+                <div class="form-group">
+                    <label for="post-title-input">Title</label>
+                    <input type="text" id="post-title-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="post-image-input">Image URL (Optional)</label>
+                    <input type="url" id="post-image-input" placeholder="https://example.com/image.jpg">
+                </div>
+
+              
+                <div class="form-group">
+                    <label for="post-video-input">Video URL (Optional, e.g., YouTube, Vimeo, .mp4)</label>
+                    <input type="url" id="post-video-input" placeholder="https://www.youtube.com/watch?v=...">
+                </div>
+
+                <div class="form-group">
+                    <label for="post-content-input">Content</label>
+                    <textarea id="post-content-input" rows="10" required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" id="save-post-btn" class="btn btn-primary">Save Post</button>
+                    <button type="button" id="cancel-btn" class="btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
