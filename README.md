@@ -1,6 +1,4 @@
 # Blog-post
-# Simple Blog - A Vanilla JS CRUD Application
-
 A fully functional, single-page blog application built from the ground up with HTML, CSS, and vanilla JavaScript. This project serves as a practical demonstration of creating a client-side CRUD (Create, Read, Update, Delete) system without any frameworks or libraries.
 ---
 
